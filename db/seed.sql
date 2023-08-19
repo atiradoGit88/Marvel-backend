@@ -1,0 +1,11 @@
+\c avengers_dev;
+
+INSERT INTO avengers (vigilante_title, abilities, birthplace, is_ally, power_scale, alter_ego, issue_appearance, file_photo) VALUES
+('Spider-Man', ' Superhuman strength, agility, reflexes, stamina, durability, coordination, and balance, clinging to surfaces and ceilings like a spider, and detecting danger with his precognition ability called "spider-sense"', 'Queens, New York', true, 5, 'Peter Parker', 5, 'https://i.ytimg.com/vi/EXaqGfbiTxc/maxresdefault.jpg'),
+('Captain America', 'Captain America possesses no superpowers, though the Super-Soldier Serum has enhanced his bodys strength, speed, agility, endurance, reflexes, reaction time, and natural self-healing ability to the peak of human physical perfection.', 'Brooklyn, New York', true, 3, 'Steve Reogers', 1, 'https://m.media-amazon.com/images/M/MV5BMzA2NDkwODAwM15BMl5BanBnXkFtZTgwODk5MTgzMTE@._V1_.jpg'),
+('Dr. Strange', 'Sorcerer, infinite longevity, energy blast, astral projection, banishment, conjuring of objects, telepathy, telekenesis, flight, protective shields, hypnotism, illusions, intangibility, time manipulation, the words, pyrokenesis, cryokinesis, organic disintegration, paralysis, reality warping, divine sources.', 'Philidelphia', true, 18, 'Stephen Strange', 110, 'https://cdn.marvel.com/content/1x/doctorstrangeinthemultiverseofmadness_lob_crd_02_3.jpg'),
+('Thor', 'Odinpower, warriors madness (Berserker Rage), superhuman strength, superhuman durability, superhuman speed, superhuman reflexes, control of elements, hand-to-hand combat, sword fighting', 'Asgard', true, 15, 'Donald Blake', 83, 'https://lumiere-a.akamaihd.net/v1/images/h_thorragnarok_mobile_19888_746476a2.jpeg'),
+('Star-Lord', 'No powers', 'St. Charles, Missouri', true, 1, 'Peter Quill', 4, 'https://i.ebayimg.com/images/g/9nAAAOSwo0RkOBHP/s-l1600.jpg');
+
+
+-- (human 1, enhanced humans 2, building 3, Multi building 4, street 5, mutistreet 6, city 7, nuclear 8, tectonic 9, country 10, continent 11, moon 12, planetary 13, star 14, solar system 15, galaxy 16, universal 17, multvversal 18, extra dimenssional 19, omniversal 20.)
