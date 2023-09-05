@@ -3,8 +3,6 @@ const db = require("../db/dbConfig.js");
 const getAllAvengers = async() => {
   try {
     const allAvengers = await db.any("SELECT * FROM avengers");
-    console.log("hi")
-    console.log(allAvengers)
     return allAvengers; 
   } catch (error) {
     return error;
@@ -26,6 +24,7 @@ const getAvenger = async (id) => {
         "INSERT INTO avengers ( vigilante_title, abilities, birthplace, is_ally, power_scale, alter_ego, issue_appearance, file_photo ) VALUES($1, $2, $3, $4, $5, $6, $7, $8) RETURNING *",
         [ avenger.vigilante_title, avenger.abilities, avenger.birthplace, avenger.is_ally, avenger.power_scale, avenger.alter_ego, avenger.issue_appearance, avenger.file_photo ]
       );
+      console.log(newAvenger)
       return newAvenger;
     } catch (err) {
       return err;

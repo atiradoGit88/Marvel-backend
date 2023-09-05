@@ -7,7 +7,7 @@ const checkVigilanteTitle = (req, res, next) => {
   };
   
   const checkBirthPlace = (req, res, next) => {
-    if (req.body.title) {
+    if (req.body.birthplace) {
       next();
     } else {
       res.status(400).json({ error: "Birth place is required" });

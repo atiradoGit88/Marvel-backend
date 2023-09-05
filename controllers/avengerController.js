@@ -30,7 +30,7 @@ avengers.get("/", async  (req, res) => {
 avengers.get("/:id", async (req, res) => {
     const { id } = req.params;
     const avenger = await getAvenger(id);
-    if (avenger.runtime) {
+    if (avenger.issue_appearance) {
       res.json(avenger);
     } else {
       res.status(404).json({ error: "not found" });
@@ -38,7 +38,7 @@ avengers.get("/:id", async (req, res) => {
   });
   
   // CREATE AND POSTS IT TO ALL AVENGERS
-avengers.post("/", checkBoolean, checkVigilanteTitle, checkBirthPlace, async (req, res) => {
+avengers.post("/", checkBoolean, async (req, res) => {
     try {
       const avenger = await newAvenger(req.body);
       res.json(avenger);
